@@ -1,0 +1,13 @@
+# La segunda vuelta ejecuta la alternativa, sin consumir agua adicional.
+agua = 20;
+energia = 0;
+
+repetir 2 {
+    si agua >= 15 {
+        regar 15;
+    } sino {
+        mostrar "Se omite el riego: quedan menos de 15 litros";
+    }
+}
+
+reporte;

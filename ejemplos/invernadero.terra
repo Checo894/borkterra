@@ -1,0 +1,27 @@
+# Recursos iniciales y configuración de una rutina de tres días.
+agua = 100;
+energia = 80;
+riego_diario = 15;
+luz_diaria = 10;
+dia = 1;
+
+repetir 3 {
+    mostrar "Día de operación:";
+    mostrar dia;
+
+    si energia >= luz_diaria {
+        iluminar luz_diaria;
+    } sino {
+        mostrar "Energía insuficiente para la iluminación";
+    }
+
+    si agua >= riego_diario {
+        regar riego_diario;
+    } sino {
+        mostrar "Agua insuficiente para el riego";
+    }
+
+    dia = dia + 1;
+}
+
+reporte;
